@@ -1,2 +1,2 @@
-# Aspose_Total_NET
-Aspose.Words for .NET examples and plugins
+# Aspose.Total for .NET
+Aspose.Total for .NET examples and plugins.
