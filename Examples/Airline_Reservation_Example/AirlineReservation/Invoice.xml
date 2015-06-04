@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Pdf xmlns="Aspose.Pdf" Title="Invoice" Author="Aspose Support" Producer="Aspose Pty Ltd" Creator="Aspose.Pdf" Subject="FlowNow Airline" Keywords="Pdf Aspose.Pdf Invoice">
+	<Section PageMarginLeft='50' PageMarginRight='50' PageMarginTop='140' ID='section1'>
+		<Header>
+			<Image Type='jpeg' MarginTop='30' ID='logo'></Image>
+			<Text MarginTop='25'>
+				<Segment Color='rgb 0 0 160' FontName='Times-BoldItalic' FontSize='10'>
+				Planet Earth, The Universe, 2012</Segment>
+			</Text>
+			<Text>
+				<Segment Color='rgb 0 0 160' FontName='Times-BoldItalic' FontSize='10'>
+				Phone: 1-222-222-2222 Fax: 1-111-111-1111</Segment>
+			</Text>
+		</Header>
+	</Section>
+</Pdf>
+

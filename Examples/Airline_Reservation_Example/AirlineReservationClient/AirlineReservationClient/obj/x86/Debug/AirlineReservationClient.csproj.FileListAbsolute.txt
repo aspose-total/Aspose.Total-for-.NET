@@ -1,0 +1,12 @@
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\bin\Debug\AirlineReservationClient.exe
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\bin\Debug\AirlineReservationClient.pdb
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\AirlineReservationClient.AirlineClient.resources
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\AirlineReservationClient.Properties.Resources.resources
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\AirlineReservationClient.exe
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\AirlineReservationClient.pdb
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\bin\Debug\Aspose.Pdf.dll
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\bin\Debug\Aspose.Pdf.xml
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\bin\Debug\AirlineReservationClient.exe.config
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\AirlineReservationClient\AirlineReservationClient\obj\x86\Debug\GenerateResource.write.1.tlog

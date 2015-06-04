@@ -1,0 +1,11 @@
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\FlyNowAirlineBookingService.dll.config
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\FlyNowAirlineBookingService.dll
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\FlyNowAirlineBookingService.pdb
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\obj\Debug\FlyNowAirlineBookingService.dll
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\obj\Debug\FlyNowAirlineBookingService.pdb
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\Aspose.Pdf.dll
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\Aspose.Pdf.xml
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\Aspose.BarCode.dll
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\Aspose.Email.dll
+D:\Work\Samples\Evangelism-Mashups\AirlineReservation\FlyNowAirlineBookingService\FlyNowAirlineBookingService\bin\Debug\Aspose.Email.xml

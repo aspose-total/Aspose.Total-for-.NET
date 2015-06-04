@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="024f09ce-11da-474d-8400-06f7ebb44942" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8732/Design_Time_Addresses/FlyNowAirlineBookingService/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="898ca3e1-6330-4492-8e3e-057949b35fb2" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FlyNowAirlineBookingService/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="0a34bda0-2761-485e-a3bd-336f377af316" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FlyNowAirlineBookingService/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2c375455-c48f-4cac-aa1b-abad5ddf4746" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FlyNowAirlineBookingService/Service1/mex" />
+    <MetadataFile FileName="FlyNowAirlineBookingService.xsd" MetadataType="Schema" ID="5347bbe5-cd42-4b9f-bcfe-7bbb90f26a96" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FlyNowAirlineBookingService/Service1/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="cf563f27-40e8-4a5e-a881-f3f3f517cb3c" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/FlyNowAirlineBookingService/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

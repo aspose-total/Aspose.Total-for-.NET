@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FlyNowAirlineBookingService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FlyNowAirlineBookingService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="BookingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookingInfo" nillable="true" type="tns:BookingInfo" />
+  <xs:complexType name="FlightInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArrivalDateandTimeBack" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ArrivalDateandTimeDest" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureDateandTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fare" type="xs:float" />
+      <xs:element minOccurs="0" name="FlightNumberLeave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightNumberReturn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnDateandTime" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Seats" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FlightInfo" nillable="true" type="tns:FlightInfo" />
+  <xs:complexType name="PassengerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeatNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PassengerInfo" nillable="true" type="tns:PassengerInfo" />
+</xs:schema>

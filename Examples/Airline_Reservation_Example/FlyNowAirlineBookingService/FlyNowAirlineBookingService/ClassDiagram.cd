@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FlyNowAirlineBookingService.BookingInfo">
+    <Position X="6.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAIAAAACBAAAAAAAAAAAAAAEAQAABAEAAAA=</HashCode>
+      <FileName>IBookingService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyNowAirlineBookingService.FlightInfo">
+    <Position X="9" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAEAACAAAACAmAEBIoAACYAAAgEBQAABAEAAAA=</HashCode>
+      <FileName>IBookingService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyNowAirlineBookingService.PassengerInfo">
+    <Position X="6.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAAAQAQAAEIEAAACAAAAAAAAAAA=</HashCode>
+      <FileName>IBookingService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyNowAirlineBookingService.BookingService" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BookingService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="FlyNowAirlineBookingService.AsposeFileManager">
+    <Position X="4" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAACAAAAAAAAAAAAAAAAACAAAAAAAIAAAAA=</HashCode>
+      <FileName>AsposeFileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FlyNowAirlineBookingService.IBookingService">
+    <Position X="4" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBookingService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
