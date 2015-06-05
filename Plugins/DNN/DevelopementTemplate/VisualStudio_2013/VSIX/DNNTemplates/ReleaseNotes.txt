@@ -1,0 +1,18 @@
+DNN Visual Studio Gallery Templates
+These templates are designed for DotNetNuke 7+ (references are currently for 7.0.2),
+managed by Zaheer Tariq, owner Aspose Pty Ltd
+http://www.aspose.com
+
+This VSIX extension package is an offshoot of the Aspose DNN Templates project, 
+the source code for these templates, as well as older templates are
+available there. http://asposednn.codeplex.com
+
+V1.0.0 - Release Date 6/01/2015
+
+Description: Initial Visual Studio Gallery installer for DNN, includes 
+both a C# and VB.NET project template for Visual Studio 2013 and DotNetNuke 7+. 
+
+Instructions For Use 
+To use these templates you can follow the instructions found in the DotNetNuke 
+Wiki on the following page
+http://www.aspose.com/docs/display/totalnet/1.+Aspose.Total+.NET+for+DNN

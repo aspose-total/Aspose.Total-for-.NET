@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aspose.BarCode" xml:space="preserve">
+    <value>Print barcode labels
+Generate barcode images and save to stream or image file
+Recognize barcodes from stream or image file
+Enhance your application workflow by adding barcode                   functionality
+Embed barcodes in documents to aid tracability
+Use the recognition functions to drive your real-life work                 processes
+Add barcode recognition to promote 3rd party services,                  for example send users to Amazon from the scanning of a              book barcode</value>
+  </data>
+  <data name="Aspose.Cells" xml:space="preserve">
+    <value>Excel reporting - build dynamic Excel reports on the fly
+Create Excel dashboards, incorporating charts and pivot                tables
+High-fidelity Excel rendering and printing
+Import data from Excel spreadsheets
+Export data to Excel spreadsheets
+Spreadsheet generation
+Spreadsheet visualization through an Excel enabled grid for           both desktop and web
+Spreadsheet manipulation/editing
+Spreadsheet conversion</value>
+  </data>
+  <data name="Aspose.Diagram" xml:space="preserve">
+    <value>Read multiple Visio formats including VSD, VSS, VST, VSX,          VTX,VDW and VDX
+Read properties of different objects in your diagram
+Save your diagrams as XML (VDX, VSX and VTX)
+Export your diagrams to images
+Export your diagrams to PDF
+Export your diagrams to XPS
+Export your diagram to HTML
+Export your diagram to SVG
+Export your diagram to SWF
+Read/change MS Visio document properties
+Print Visio diagrams with high fidelity
+Print Visio diagram on a server via XpsPrint API</value>
+  </data>
+  <data name="Aspose.Email" xml:space="preserve">
+    <value>Easily send email with HTML formatting and attachments
+Mail merge and send mass mail functions.
+Connect to POP3 and IMAP mail servers, list and download          messages locally.
+Connect to Microsoft Exchange Servers, list, download and          send messages.
+Create and update tasks using iCalendar.
+Load messages from file or stream (EML, MSG or MHT                   formats).
+Save messages to file or stream (EML, MSG or MHT formats).
+File format conversion (EML, MSG or MHT formats).
+Generate dates for specified recurrence patterns according to      iCalendar RFC.</value>
+  </data>
+  <data name="Aspose.Imaging" xml:space="preserve">
+    <value>Create images from scratch
+Load and edit existing images
+Export images to a variety of formats
+Draw images using basic functionality like manipulating the            pixel information
+Draw images using advanced features like Graphics and              GraphicsPath</value>
+  </data>
+  <data name="Aspose.OCR" xml:space="preserve">
+    <value>Read text from images
+Read font and style information
+Extract text from whole image or a part of the image</value>
+  </data>
+  <data name="Aspose.Pdf" xml:space="preserve">
+    <value>Create new PDF documents using product API.
+Transform XML and XSL-FO document into PDF
+Convert SVG files into PDF format
+Convert an image file into PDF format
+Convert an HTML page into PDF format
+Add tables and graph objects during PDF generation
+Add/update/delete text and images from PDF documents
+Insert, extract, append, concatenate PDF documents
+Split PDF document into single page documents
+Add headers and footers during PDF generation
+Add headings and table of contents during PDF creation</value>
+  </data>
+  <data name="Aspose.Slides" xml:space="preserve">
+    <value>Create new slides or clone existing slides from templates
+Create shapes on slides
+Add text to shapes
+Handle text and shape formatting
+Apply or remove protection on shapes
+Scan text from presentations
+Render slides to images
+Export presentations to PDF
+Add images to presentations
+Embed Excel charts as OLE objects in slides
+Generate presentations from database</value>
+  </data>
+  <data name="Aspose.Tasks" xml:space="preserve">
+    <value>Create new project files from scratch
+Define weekdays for the calendar
+Define exceptions in calendars
+Manage task baselines, costs and milestones
+Handle resource attributes
+Define resource assignment and allocation
+Render work breakdown structures (WBS) to images
+Render project data to HTML
+Sort tasks on names
+Sort resources on names
+Update custom properties of MPP Project files and write                 them back to original MPP format</value>
+  </data>
+  <data name="Aspose.Words" xml:space="preserve">
+    <value>Perform mail merge
+Add barcodes to your Word documents
+Generate reports using mail merge
+Insert formatted text, paragraphs, images, tables and                     other content into a Word document
+Populate a table in a Word document using data retrieved            from a database
+Create mailing labels
+Insert a diagram into a Word document
+Combining documents, moving sections between documents.
+Mail merge data from multiple tables, format date and numeric        fields
+Insert a watermark into a document</value>
+  </data>
+  <data name="AsposeGeneralDetails" xml:space="preserve">
+    <value>Aspose provides .NET, Java, SSRS, SharePoint and JasperReports components for managing file formats, including Word, Excel, PowerPoint, PDF, Project, Flash, InfoPath and Metafiles. Other data visualization and utility components for Barcode, Charting and Ad Hoc query building are also offered.</value>
+  </data>
+  <data name="SolutionTitleText" xml:space="preserve">
+    <value>DotNetNuke</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="aspose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\aspose.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aspose.Note" xml:space="preserve">
+    <value>Read OneNote documents.
+Read properties of different objects in OneNote documents            (image, page).
+Save your OneNote document as image (PNG, BMP, GIF              and JPEG).
+Extract images from a OneNote document.
+Export OneNote documents to PDF.
+Extract text from OneNote document.
+Get information of each page from a OneNote document.</value>
+  </data>
+</root>
