@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Aspose.CreateProjectWizard.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Aspose_CreateProjectWizard_com_aspose_community_AsposeDownloads" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="36c1422b-43ed-447c-93b6-76468752b14e" Version="1.0" Language="en-US" Publisher="Zaheer Tariq" />
+    <DisplayName>Aspose DNN Project Templates for VS 2013</DisplayName>
+    <Description xml:space="preserve">This Package contains Visual Studio 2013 Project Templates to aid in your DNN Module/Extension and theme development</Description>
+    <MoreInfo>http://www.aspose.com/docs/display/totalnet/1.+Aspose.Total+.NET+for+DNN</MoreInfo>
+    <License>License.txt</License>
+    <GettingStartedGuide>http://www.aspose.com/docs/display/totalnet/1.1.1+Introduction</GettingStartedGuide>
+    <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
+    <Icon>aspose.ico</Icon>
+    <PreviewImage>preview.png</PreviewImage>
+    <Tags>DotNetNuke, DNN, CMS, "Content Management System", "Open Source", OpenSource,Skin,Theme, DNNCMS, Aspose, File Format APIs</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.IntegratedShell" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.Premium" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.Ultimate" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.VSLS" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.VPDExpress" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.VSWinExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.0" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="12.0" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="CSharp-Template" d:TargetPath="|CSharp-Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VB-Template" d:TargetPath="|VB-Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VB-DAL2-Template" d:TargetPath="|VB-DAL2-Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="CSharp-DAL2-Template" d:TargetPath="|CSharp-DAL2-Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="CSharp-Theme-Template" d:TargetPath="|CSharp-Theme-Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="Aspose.CreateProjectWizard" Path="|Aspose.CreateProjectWizard|" AssemblyName="|Aspose.CreateProjectWizard;AssemblyName|" />
+    <!--
+    <CustomExtension Type="Company.Product.Type">Path\File.ext</CustomExtension>
+    -->
+  </Assets>
+</PackageManifest>

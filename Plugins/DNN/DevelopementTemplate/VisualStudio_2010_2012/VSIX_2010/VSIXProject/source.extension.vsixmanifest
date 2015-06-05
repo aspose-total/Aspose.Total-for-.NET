@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="VSIXProject.Microsoft.cf4ac321-b167-4295-b373-36dbdc1f1d93">
+    <Name>Aspose .NET Module Development Template for DNN</Name>
+    <Author>Zaheer Tariq</Author>
+    <Version>1.5</Version>
+    <Description xml:space="preserve">This Visual Studio Package contains Project Templates to aid in your DNN Extension development using Aspose Components.</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>https://asposednn.codeplex.com/</MoreInfoUrl>
+    <License>License.txt</License>
+    <GettingStartedGuide>http://www.aspose.com/</GettingStartedGuide>
+    <Icon>aspose.ico</Icon>
+    <PreviewImage>preview.png</PreviewImage>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Express_All</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+      <VisualStudio Version="11.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Express_All</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+      <VisualStudio Version="12.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Express_All</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+  <Content>
+    <Assembly AssemblyName="|Aspose.CreateProjectWizard;AssemblyName|">|Aspose.CreateProjectWizard|</Assembly>
+    <ProjectTemplate>ProjectTemplates</ProjectTemplate>
+  </Content>
+</Vsix>

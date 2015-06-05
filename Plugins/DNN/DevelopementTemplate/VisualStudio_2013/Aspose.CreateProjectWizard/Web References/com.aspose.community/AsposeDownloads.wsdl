@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://aspose.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://aspose.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://aspose.com/">
+      <s:element name="GetProductRelease">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="platform" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductReleaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductReleaseResult" type="tns:ProductRelease" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductRelease">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VersionNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChangeLog" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadLink" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductResourceFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="platform" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductResourceFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductResourceFileResult" type="tns:ProductRelease" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetProductReleaseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductRelease" />
+  </wsdl:message>
+  <wsdl:message name="GetProductReleaseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductReleaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductResourceFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductResourceFile" />
+  </wsdl:message>
+  <wsdl:message name="GetProductResourceFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductResourceFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AsposeDownloadsSoap">
+    <wsdl:operation name="GetProductRelease">
+      <wsdl:input message="tns:GetProductReleaseSoapIn" />
+      <wsdl:output message="tns:GetProductReleaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductResourceFile">
+      <wsdl:input message="tns:GetProductResourceFileSoapIn" />
+      <wsdl:output message="tns:GetProductResourceFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AsposeDownloadsSoap" type="tns:AsposeDownloadsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductRelease">
+      <soap:operation soapAction="http://aspose.com/GetProductRelease" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductResourceFile">
+      <soap:operation soapAction="http://aspose.com/GetProductResourceFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AsposeDownloadsSoap12" type="tns:AsposeDownloadsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductRelease">
+      <soap12:operation soapAction="http://aspose.com/GetProductRelease" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductResourceFile">
+      <soap12:operation soapAction="http://aspose.com/GetProductResourceFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AsposeDownloads">
+    <wsdl:port name="AsposeDownloadsSoap" binding="tns:AsposeDownloadsSoap">
+      <soap:address location="http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AsposeDownloadsSoap12" binding="tns:AsposeDownloadsSoap12">
+      <soap12:address location="http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
