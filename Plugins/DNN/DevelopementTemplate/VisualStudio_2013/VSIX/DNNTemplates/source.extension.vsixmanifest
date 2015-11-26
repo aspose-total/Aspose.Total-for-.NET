@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="36c1422b-43ed-447c-93b6-76468752b14e" Version="1.0" Language="en-US" Publisher="Zaheer Tariq" />
+    <Identity Id="36c1422b-43ed-447c-93b6-76468752b14e" Version="1.0" Language="en-US" Publisher="Aspose" />
     <DisplayName>Aspose DNN Project Templates for VS 2013</DisplayName>
     <Description xml:space="preserve">This Package contains Visual Studio 2013 Project Templates to aid in your DNN Module/Extension and theme development</Description>
     <MoreInfo>http://www.aspose.com/docs/display/totalnet/1.+Aspose.Total+.NET+for+DNN</MoreInfo>

@@ -35,7 +35,7 @@ namespace Aspose.CreateProjectWizard
 
                 string destinationAsposeFolder = DestinationDirectory + "\\Aspose";
                 if (!Directory.Exists(destinationAsposeFolder)) Directory.CreateDirectory(destinationAsposeFolder);
-                
+
                 foreach (string product in GlobalData.SelectedProductsList)
                 {
                     string productReleaseFile = AsposeManager.GetLibraryPath(product);
@@ -44,12 +44,12 @@ namespace Aspose.CreateProjectWizard
                         File.Copy(productReleaseFile, destinationAsposeFolder + "\\" + Path.GetFileName(productReleaseFile));
                         ((VSProject)project.Object).References.Add(destinationAsposeFolder + "\\" + Path.GetFileName(productReleaseFile));
 
-                        referencesToAdd += string.Format(referenceTextTemplate, product) + Environment.NewLine;
+                        referencesToAdd += string.Format(referenceTextTemplate, (product.ToLower().Equals("aspose.3d") ? "Aspose.ThreeD" : product)) + Environment.NewLine;
                     }
-                }               
+                }
             }
-            catch (Exception) { }            
-            finally 
+            catch (Exception) { }
+            finally
             {
                 if (!string.IsNullOrEmpty(destinationFileToChange))
                 {

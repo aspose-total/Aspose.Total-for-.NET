@@ -57,21 +57,22 @@ namespace Aspose.CreateProjectWizard
             this.productsCheckedListBox.CheckOnClick = true;
             this.productsCheckedListBox.FormattingEnabled = true;
             this.productsCheckedListBox.Items.AddRange(new object[] {
-            "Aspose.Cells",
             "Aspose.Words",
+            "Aspose.Cells",
             "Aspose.Pdf",
             "Aspose.Slides",
-            "Aspose.BarCode",
-            "Aspose.Tasks",
-            "Aspose.Diagram",
-            "Aspose.OCR",
-            "Aspose.Imaging",
             "Aspose.Email",
-            "Aspose.Note"});
+            "Aspose.BarCode",
+            "Aspose.Imaging",
+            "Aspose.Tasks",
+            "Aspose.OCR",
+            "Aspose.Diagram",
+            "Aspose.Note",
+            "Aspose.3D"});
             this.productsCheckedListBox.Location = new System.Drawing.Point(25, 88);
             this.productsCheckedListBox.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.productsCheckedListBox.Name = "productsCheckedListBox";
-            this.productsCheckedListBox.Size = new System.Drawing.Size(111, 165);
+            this.productsCheckedListBox.Size = new System.Drawing.Size(111, 180);
             this.productsCheckedListBox.TabIndex = 1;
             this.productsCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.productsCheckedListBox_SelectedIndexChanged);
             // 
@@ -92,7 +93,7 @@ namespace Aspose.CreateProjectWizard
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(166, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(327, 220);
+            this.groupBox1.Size = new System.Drawing.Size(327, 233);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Common uses";
@@ -102,7 +103,7 @@ namespace Aspose.CreateProjectWizard
             this.linkLabelAspose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.linkLabelAspose.AutoSize = true;
             this.linkLabelAspose.LinkArea = new System.Windows.Forms.LinkArea(13, 10);
-            this.linkLabelAspose.Location = new System.Drawing.Point(10, 200);
+            this.linkLabelAspose.Location = new System.Drawing.Point(10, 213);
             this.linkLabelAspose.Name = "linkLabelAspose";
             this.linkLabelAspose.Size = new System.Drawing.Size(211, 17);
             this.linkLabelAspose.TabIndex = 3;
@@ -115,7 +116,7 @@ namespace Aspose.CreateProjectWizard
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 19);
+            this.label1.Location = new System.Drawing.Point(7, 26);
             this.label1.MaximumSize = new System.Drawing.Size(315, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
@@ -127,7 +128,7 @@ namespace Aspose.CreateProjectWizard
             this.groupBox2.Controls.Add(this.selectAllCheckBox);
             this.groupBox2.Location = new System.Drawing.Point(3, 45);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(157, 220);
+            this.groupBox2.Size = new System.Drawing.Size(157, 233);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select component";

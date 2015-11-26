@@ -225,6 +225,15 @@ Combining documents, moving sections between documents.
 Mail merge data from multiple tables, format date and numeric        fields
 Insert a watermark into a document</value>
   </data>
+  <data name="Aspose.ThreeD" xml:space="preserve">
+    <value>Creating, reading, manipulating and saving 3D files.
+Build the mesh of various 3D geometric shapes.
+Create a 3D scene document.
+Set up normals or UV on the Cube.
+Format elements using 3D Transformations.
+Share Mesh's geometry data between the multiple nodes.
+Add Animation property to 3D scene document.</value>
+  </data>
   <data name="AsposeGeneralDetails" xml:space="preserve">
     <value>Aspose provides .NET, Java, SSRS, SharePoint and JasperReports components for managing file formats, including Word, Excel, PowerPoint, PDF, Project, Flash, InfoPath and Metafiles. Other data visualization and utility components for Barcode, Charting and Ad Hoc query building are also offered.</value>
   </data>

@@ -224,6 +224,9 @@ namespace Aspose.CreateProjectWizard.Library
                 case "aspose.note":
                     description = global::Aspose.CreateProjectWizard.Properties.Resources.Aspose_Note;
                     break;
+                case "aspose.3d":
+                    description = global::Aspose.CreateProjectWizard.Properties.Resources.Aspose_ThreeD;
+                    break;
                 default:
                     description = "";
                     break;

@@ -10,7 +10,7 @@
 Imports $rootnamespace$$safeprojectname$.Components
 Imports DotNetNuke.Services.Exceptions
 Imports DotNetNuke.Entities.Users
-
+Imports DotNetNuke.Common
 
 ''' <summary>
 ''' The View class displays the content
@@ -89,11 +89,11 @@ Public Class Edit
         Else
             tc.CreateItem(t)
         End If
-        Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
+        Response.Redirect(NavigateURL())
     End Sub
     
     Protected Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
+        Response.Redirect(NavigateURL())
     End Sub
     
 End Class
