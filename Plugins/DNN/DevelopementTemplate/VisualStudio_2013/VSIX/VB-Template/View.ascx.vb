@@ -12,6 +12,7 @@ Imports DotNetNuke.Entities.Modules.Actions
 Imports DotNetNuke.Entities.Modules
 Imports DotNetNuke.Services.Exceptions
 Imports DotNetNuke.Services.Localization
+Imports DotNetNuke.Security
 $Aspose_Dynamic_References$
 
 ''' <summary>
@@ -42,7 +43,7 @@ Public Class View
         Try
 
         Catch exc As Exception
-            Exceptions.ProcessModuleLoadException(Me, exc)
+            ProcessModuleLoadException(Me, exc)
         End Try
 
     End Sub
@@ -60,7 +61,7 @@ Public Class View
     Public ReadOnly Property ModuleActions() As ModuleActionCollection Implements IActionable.ModuleActions
         Get
             Dim Actions As New ModuleActionCollection
-            Actions.Add(GetNextActionID, Localization.GetString("EditModule", LocalResourceFile), Entities.Modules.Actions.ModuleActionType.AddContent, "", "", EditUrl(), False, DotNetNuke.Security.SecurityAccessLevel.Edit, True, False)
+            Actions.Add(GetNextActionID, Localization.GetString("EditModule", LocalResourceFile), ModuleActionType.AddContent, "", "", EditUrl(), False, SecurityAccessLevel.Edit, True, False)
             Return Actions
         End Get
     End Property

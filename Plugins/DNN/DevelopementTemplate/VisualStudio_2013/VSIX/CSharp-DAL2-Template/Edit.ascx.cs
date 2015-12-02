@@ -12,6 +12,7 @@
 
 using System;
 using DotNetNuke.Entities.Users;
+using DotNetNuke.Common;
 using $rootnamespace$$safeprojectname$.Components;
 using DotNetNuke.Services.Exceptions;
 
@@ -106,12 +107,12 @@ namespace $rootnamespace$$safeprojectname$
             {
                 tc.CreateItem(t);
             }
-            Response.Redirect(DotNetNuke.Common.Globals.NavigateURL());
+            Response.Redirect(Globals.NavigateURL());
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect(DotNetNuke.Common.Globals.NavigateURL());
+            Response.Redirect(Globals.NavigateURL());
         }
     }
 }

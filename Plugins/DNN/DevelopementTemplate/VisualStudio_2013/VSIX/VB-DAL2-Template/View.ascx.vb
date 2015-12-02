@@ -7,12 +7,14 @@
 ' CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 ' DEALINGS IN THE SOFTWARE.
 ' 
-Imports DotNetNuke
-Imports DotNetNuke.Entities.Modules.Actions
-Imports DotNetNuke.Entities.Modules
-Imports DotNetNuke.Services.Exceptions
-Imports DotNetNuke.Services.Localization
+Imports System
+Imports System.Web.UI.WebControls
 Imports $rootnamespace$$safeprojectname$.Components
+Imports DotNetNuke.Security
+Imports DotNetNuke.Services.Exceptions
+Imports DotNetNuke.Entities.Modules
+Imports DotNetNuke.Entities.Modules.Actions
+Imports DotNetNuke.Services.Localization
 Imports DotNetNuke.UI.Utilities
 $Aspose_Dynamic_References$
 
@@ -48,7 +50,7 @@ Partial Class View
             rptItemList.DataBind()
 
         Catch exc As Exception
-            Exceptions.ProcessModuleLoadException(Me, exc)
+            ProcessModuleLoadException(Me, exc)
         End Try
 
     End Sub
@@ -66,14 +68,14 @@ Partial Class View
     Public ReadOnly Property ModuleActions() As ModuleActionCollection Implements IActionable.ModuleActions
         Get
             Dim Actions As New ModuleActionCollection
-            Actions.Add(GetNextActionID, Localization.GetString("EditModule", LocalResourceFile), Entities.Modules.Actions.ModuleActionType.AddContent, "", "", EditUrl(), False, DotNetNuke.Security.SecurityAccessLevel.Edit, True, False)
+            Actions.Add(GetNextActionID, Localization.GetString("EditModule", LocalResourceFile), ModuleActionType.AddContent, "", "", EditUrl(), False, SecurityAccessLevel.Edit, True, False)
             Return Actions
         End Get
     End Property
 
     Protected Sub rptItemListOnItemDataBound(ByVal sender As Object, ByVal e As RepeaterItemEventArgs) Handles rptItemList.ItemDataBound
         If e.Item.ItemType = ListItemType.AlternatingItem Or e.Item.ItemType = ListItemType.Item Then
-            Dim lnkEdit As HyperLink = e.Item.FindControl("lnkEdit")
+            Dim lnkEdit As System.Web.UI.WebControls.HyperLink = e.Item.FindControl("lnkEdit")
             Dim lnkDelete As LinkButton = e.Item.FindControl("lnkDelete")
             Dim pnlAdmin As Panel = e.Item.FindControl("pnlAdmin")
             Dim t As Item = e.Item.DataItem
@@ -98,6 +100,7 @@ Partial Class View
             Dim tc As New ItemController
             tc.DeleteItem(e.CommandArgument, ModuleId)
         End If
-        Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
+        Response.Redirect(Request.Url.ToString())
+        'Response.Redirect(DotNetNuke.Common.Globals.NavigateURL())
     End Sub
 End Class
