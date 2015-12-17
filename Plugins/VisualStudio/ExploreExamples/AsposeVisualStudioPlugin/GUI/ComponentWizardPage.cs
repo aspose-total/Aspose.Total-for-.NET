@@ -306,6 +306,12 @@ namespace AsposeVisualStudioPlugin.GUI
                 AsposeComponents.list.TryGetValue(Constants.ASPOSE_NOTE, out component);
                 component.Selected = true;
             }
+            if (checkBoxAspose3D.Checked)
+            {
+                AsposeComponent component = new AsposeComponent();
+                AsposeComponents.list.TryGetValue(Constants.ASPOSE_3D, out component);
+                component.Selected = true;
+            }
         }
 
 
@@ -325,7 +331,7 @@ namespace AsposeVisualStudioPlugin.GUI
         {
             if (checkBoxAsposeCells.Checked || checkBoxAsposeWords.Checked || checkBoxAsposePdf.Checked || checkBoxAsposeSlides.Checked ||
                 checkBoxAsposeDiagram.Checked || checkBoxAsposeBarCode.Checked || checkBoxAsposeTasks.Checked || checkBoxAsposeEmail.Checked ||
-                checkBoxAsposeOCR.Checked || checkBoxAsposeImaging.Checked || checkBoxAsposeNote.Checked)
+                checkBoxAsposeOCR.Checked || checkBoxAsposeImaging.Checked || checkBoxAsposeNote.Checked || checkBoxAspose3D.Checked)
                 return true;
 
 
@@ -345,6 +351,7 @@ namespace AsposeVisualStudioPlugin.GUI
             setTooltip(checkBoxAsposeOCR, Constants.ASPOSE_OCR_FEATURE_TEXT);
             setTooltip(checkBoxAsposeImaging, Constants.ASPOSE_IMAGING_FEATURE_TEXT);
             setTooltip(checkBoxAsposeNote, Constants.ASPOSE_NOTE_FEATURE_TEXT);
+            setTooltip(checkBoxAspose3D, Constants.ASPOSE_3D_FEATURE_TEXT);
         }
 
         private void setTooltip(Control control, string message)
@@ -433,6 +440,11 @@ namespace AsposeVisualStudioPlugin.GUI
         {
             validateForm();
         }
+        
+        private void checkBoxAspose3D_CheckedChanged(object sender, EventArgs e)
+        {
+            validateForm();
+        }
 
         #endregion
 
@@ -451,6 +463,7 @@ namespace AsposeVisualStudioPlugin.GUI
             checkBoxAsposeOCR.Checked = value;
             checkBoxAsposeImaging.Checked = value;
             checkBoxAsposeNote.Checked = value;
+            checkBoxAspose3D.Checked = value;
         }
 
         private void logoButton_Click(object sender, EventArgs e)
@@ -482,5 +495,6 @@ namespace AsposeVisualStudioPlugin.GUI
             
             Close();
         }
+
     }
 }

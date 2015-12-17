@@ -33,6 +33,7 @@ namespace AsposeVisualStudioPlugin.GUI
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxComponentsSelection = new System.Windows.Forms.GroupBox();
+            this.checkBoxAspose3D = new System.Windows.Forms.CheckBox();
             this.checkBoxAsposeNote = new System.Windows.Forms.CheckBox();
             this.checkBoxAsposeImaging = new System.Windows.Forms.CheckBox();
             this.checkBoxAsposeOCR = new System.Windows.Forms.CheckBox();
@@ -91,6 +92,7 @@ namespace AsposeVisualStudioPlugin.GUI
             // 
             this.groupBoxComponentsSelection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxComponentsSelection.Controls.Add(this.checkBoxAspose3D);
             this.groupBoxComponentsSelection.Controls.Add(this.checkBoxAsposeNote);
             this.groupBoxComponentsSelection.Controls.Add(this.checkBoxAsposeImaging);
             this.groupBoxComponentsSelection.Controls.Add(this.checkBoxAsposeOCR);
@@ -105,10 +107,24 @@ namespace AsposeVisualStudioPlugin.GUI
             this.groupBoxComponentsSelection.Controls.Add(this.checkBoxSelectAll);
             this.groupBoxComponentsSelection.Location = new System.Drawing.Point(11, 136);
             this.groupBoxComponentsSelection.Name = "groupBoxComponentsSelection";
-            this.groupBoxComponentsSelection.Size = new System.Drawing.Size(184, 262);
+            this.groupBoxComponentsSelection.Size = new System.Drawing.Size(184, 277);
             this.groupBoxComponentsSelection.TabIndex = 0;
             this.groupBoxComponentsSelection.TabStop = false;
             this.groupBoxComponentsSelection.Text = "Select Components:";
+            // 
+            // checkBoxAspose3D
+            // 
+            this.checkBoxAspose3D.AutoSize = true;
+            this.checkBoxAspose3D.FlatAppearance.BorderSize = 0;
+            this.checkBoxAspose3D.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.checkBoxAspose3D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxAspose3D.Location = new System.Drawing.Point(28, 253);
+            this.checkBoxAspose3D.Name = "checkBoxAspose3D";
+            this.checkBoxAspose3D.Size = new System.Drawing.Size(75, 17);
+            this.checkBoxAspose3D.TabIndex = 12;
+            this.checkBoxAspose3D.Text = "Aspose.3D";
+            this.checkBoxAspose3D.UseVisualStyleBackColor = true;
+            this.checkBoxAspose3D.CheckedChanged += new System.EventHandler(this.checkBoxAspose3D_CheckedChanged);
             // 
             // checkBoxAsposeNote
             // 
@@ -119,7 +135,7 @@ namespace AsposeVisualStudioPlugin.GUI
             this.checkBoxAsposeNote.Location = new System.Drawing.Point(28, 233);
             this.checkBoxAsposeNote.Name = "checkBoxAsposeNote";
             this.checkBoxAsposeNote.Size = new System.Drawing.Size(84, 17);
-            this.checkBoxAsposeNote.TabIndex = 10;
+            this.checkBoxAsposeNote.TabIndex = 11;
             this.checkBoxAsposeNote.Text = "Aspose.Note";
             this.checkBoxAsposeNote.UseVisualStyleBackColor = true;
             this.checkBoxAsposeNote.CheckedChanged += new System.EventHandler(this.checkBoxAsposeNote_CheckedChanged);
@@ -288,7 +304,7 @@ namespace AsposeVisualStudioPlugin.GUI
             this.groupBoxCommonUses.Controls.Add(this.labelCommonUses);
             this.groupBoxCommonUses.Location = new System.Drawing.Point(218, 136);
             this.groupBoxCommonUses.Name = "groupBoxCommonUses";
-            this.groupBoxCommonUses.Size = new System.Drawing.Size(354, 262);
+            this.groupBoxCommonUses.Size = new System.Drawing.Size(354, 275);
             this.groupBoxCommonUses.TabIndex = 1;
             this.groupBoxCommonUses.TabStop = false;
             this.groupBoxCommonUses.Text = "Common Uses:";
@@ -297,7 +313,7 @@ namespace AsposeVisualStudioPlugin.GUI
             // 
             this.linkLabelAspose.AutoSize = true;
             this.linkLabelAspose.LinkArea = new System.Windows.Forms.LinkArea(6, 6);
-            this.linkLabelAspose.Location = new System.Drawing.Point(12, 238);
+            this.linkLabelAspose.Location = new System.Drawing.Point(12, 249);
             this.linkLabelAspose.Name = "linkLabelAspose";
             this.linkLabelAspose.Size = new System.Drawing.Size(151, 17);
             this.linkLabelAspose.TabIndex = 1;
@@ -312,7 +328,7 @@ namespace AsposeVisualStudioPlugin.GUI
             this.labelCommonUses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelCommonUses.Location = new System.Drawing.Point(7, 20);
             this.labelCommonUses.Name = "labelCommonUses";
-            this.labelCommonUses.Size = new System.Drawing.Size(311, 195);
+            this.labelCommonUses.Size = new System.Drawing.Size(334, 208);
             this.labelCommonUses.TabIndex = 0;
             this.labelCommonUses.Text = resources.GetString("labelCommonUses.Text");
             // 
@@ -334,7 +350,7 @@ namespace AsposeVisualStudioPlugin.GUI
             // 
             // AbortButton
             // 
-            this.AbortButton.Location = new System.Drawing.Point(485, 417);
+            this.AbortButton.Location = new System.Drawing.Point(485, 434);
             this.AbortButton.Name = "AbortButton";
             this.AbortButton.Size = new System.Drawing.Size(75, 23);
             this.AbortButton.TabIndex = 7;
@@ -344,7 +360,7 @@ namespace AsposeVisualStudioPlugin.GUI
             // 
             // ContinueButton
             // 
-            this.ContinueButton.Location = new System.Drawing.Point(372, 417);
+            this.ContinueButton.Location = new System.Drawing.Point(372, 434);
             this.ContinueButton.Name = "ContinueButton";
             this.ContinueButton.Size = new System.Drawing.Size(75, 23);
             this.ContinueButton.TabIndex = 6;
@@ -355,7 +371,7 @@ namespace AsposeVisualStudioPlugin.GUI
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(0, 404);
+            this.panel1.Location = new System.Drawing.Point(0, 418);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(585, 1);
             this.panel1.TabIndex = 5;
@@ -373,7 +389,7 @@ namespace AsposeVisualStudioPlugin.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.ClientSize = new System.Drawing.Size(584, 472);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.AbortButton);
@@ -387,7 +403,7 @@ namespace AsposeVisualStudioPlugin.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(590, 490);
+            this.MaximumSize = new System.Drawing.Size(590, 500);
             this.MinimizeBox = false;
             this.Name = "ComponentWizardPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -428,5 +444,6 @@ namespace AsposeVisualStudioPlugin.GUI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBoxAsposeNote;
+        private System.Windows.Forms.CheckBox checkBoxAspose3D;
     }
 }

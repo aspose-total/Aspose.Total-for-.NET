@@ -133,7 +133,8 @@
 » Recognize barcodes from stream or image file
 » Render Windows metafiles (WMF) to images
 » Convert Windows metafiles (WMF) to other graphics formats
-» Read, convert, create, edit and manipulate Microsoft OneNote files.</value>
+» Read, convert, create, edit and manipulate Microsoft OneNote files
+» Read, convert, create, edit and manipulate 3D files FBX, STL formats</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>231</value>

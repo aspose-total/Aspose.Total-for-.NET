@@ -91,6 +91,13 @@ namespace AsposeVisualStudioPlugin.Core
             asposeNote.set_name(Constants.ASPOSE_NOTE);
             asposeNote.RemoteExamplesRepository = "https://github.com/zaheertariq/Aspose_Note_NET.git";
             list.Add(Constants.ASPOSE_NOTE, asposeNote);
+
+            AsposeComponent aspose3D = new AsposeComponent();
+            aspose3D.set_downloadUrl("");
+            aspose3D.set_downloadFileName("aspose.3d.zip");
+            aspose3D.set_name(Constants.ASPOSE_3D);
+            aspose3D.RemoteExamplesRepository = "https://github.com/aspose3d/Aspose_3D_NET.git";
+            list.Add(Constants.ASPOSE_3D, aspose3D);
         }
     }
 }

@@ -8,10 +8,12 @@
   <?define HELP_FILE_SHORTCUT_COMPONENT_GUID = "32886003-6880-43CB-B897-9AFBA7326EEF" ?>
   <?define VS2010_DLL_FILE_COMPONENT_GUID = "74D285DC-02A4-494D-84C0-F16449CDC511" ?>
   <?define VS2012_DLL_FILE_COMPONENT_GUID = "74D285DC-0204-494D-84C0-F16449CDC511" ?>
+  <?define VS2013_DLL_FILE_COMPONENT_GUID = "74D285DC-0294-494D-84C0-F16449CDC511" ?>
   <?define VS2010_ADDIN_FILE_COMPONENT_GUID = "4CBBE54B-A1D2-4D52-9FED-D29B380AA542" ?>
   <?define VS2012_ADDIN_FILE_COMPONENT_GUID = "93D9523A-D1C5-44A2-85A5-AB57E65D222E" ?>
+  <?define VS2013_ADDIN_FILE_COMPONENT_GUID = "93D95239-D1C5-44A2-85A5-AB57E65D222E" ?>
   <?define APP_NAME = "Aspose Visual Studio Plugin" ?>
-  <?define APP_VERSION = "2.0.0.0" ?>
+  <?define APP_VERSION = "2.2.0.0" ?>
   <?define DEFAULT_GROUP_NAME = "Aspose" ?>
   <?define HELP_SHORTCUT = "My Add-In Help File" ?>
 
@@ -20,8 +22,10 @@
   <?define LICENSE_AGREEMENT_FILE_NAME = "License.rtf" ?>
   <?define DLL_FILE_NAME_VS2010 = "AsposeVisualStudioPlugin.dll" ?>
   <?define DLL_FILE_NAME_VS2012 = "AsposeVisualStudioPlugin12.dll" ?>
+  <?define DLL_FILE_NAME_VS2013 = "AsposeVisualStudioPlugin13.dll" ?>
   <?define DLL_FILE_NAME_VS2010_PATH = "..\..\out\AsposeVisualStudioPlugin.dll" ?>
   <?define DLL_FILE_NAME_VS2012_PATH = "..\..\out\AsposeVisualStudioPlugin12.dll" ?>
+  <?define DLL_FILE_NAME_VS2013_PATH = "..\..\out\AsposeVisualStudioPlugin13.dll" ?>
 
   <?define ADDIN_XML_FILE_NAME = "AsposeVisualStudioPlugin.AddIn" ?>
   <?define ADDIN_XML_FILE_NAME_PATH = "..\..\out\AsposeVisualStudioPlugin.AddIn" ?>
@@ -50,6 +54,7 @@
   <?define CONNECT_CLASS_FULL_NAME_VS_2005 = "AsposeVisualStudioPlugin.Connect" ?>
   <?define CONNECT_CLASS_FULL_NAME_VS_2010 = "AsposeVisualStudioPlugin.Connect" ?>
   <?define CONNECT_CLASS_FULL_NAME_VS_2012 = "AsposeVisualStudioPlugin.Connect" ?>
+  <?define CONNECT_CLASS_FULL_NAME_VS_2013 = "AsposeVisualStudioPlugin.Connect" ?>
 
   <!--
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -95,6 +100,11 @@
                       Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\11.0" Name="InstallDir"></RegistrySearch>
     </Property>
 
+    <Property Id="VS2013INSTALLATIONFOLDER" Secure="yes">
+      <RegistrySearch Id="VS2013InstallationFolderRegistrySearchId" Type="raw"
+                      Root="HKLM" Key="SOFTWARE\Microsoft\VisualStudio\13.0" Name="InstallDir"></RegistrySearch>
+    </Property>
+
     <PropertyRef Id="NETFRAMEWORK40FULL"/>
     <Condition Message="This application requires .NET Framework 4.0. Please install the .NET Framework then run this installer again. Contact support at marketplace@aspose.com if you have further issues.">
       <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
@@ -104,8 +114,8 @@
            The OR'ed Installed variable ensures that the condition is always true when uninstalling, because we don't
            need to check that Visual Studio is present when uninstalling.
       -->
-    <Condition Message="This add-in requires Visual Studio 2010 or 2012">
-      Installed OR VS2010INSTALLATIONFOLDER OR VS2012INSTALLATIONFOLDER
+    <Condition Message="This add-in requires Visual Studio 2010 or 2012 or 2013">
+      Installed OR VS2010INSTALLATIONFOLDER OR VS2012INSTALLATIONFOLDER OR VS2013INSTALLATIONFOLDER
     </Condition>
 
     <Directory Id="TARGETDIR" Name="SourceDir">
@@ -161,7 +171,7 @@
 
           </Component>
 
-          <!-- Install the dll file of the add-in for Visual Studio 2010 -->
+          <!-- Install the dll file of the add-in for Visual Studio 2012 -->
           <Component Id="VS2012DllFileComponentId" Guid="$(var.VS2012_DLL_FILE_COMPONENT_GUID)">
 
             <File Id="VS2012DllFileId" Name="$(var.DLL_FILE_NAME_VS2012)" Vital="yes" DiskId="1" Source="$(var.DLL_FILE_NAME_VS2012_PATH)" />
@@ -178,6 +188,23 @@
 
           </Component>
 
+
+          <!-- Install the dll file of the add-in for Visual Studio 2013 -->
+          <Component Id="VS2013DllFileComponentId" Guid="$(var.VS2013_DLL_FILE_COMPONENT_GUID)">
+
+            <File Id="VS2013DllFileId" Name="$(var.DLL_FILE_NAME_VS2013)" Vital="yes" DiskId="1" Source="$(var.DLL_FILE_NAME_VS2013_PATH)" />
+            <File Id="VS2013IonicDllFileId" Name="$(var.DLL_ICONICZIP_FILE_NAME)" Vital="yes" DiskId="1" Source="$(var.DLL_ICONICZIP_FILE_NAME_PATH)" />
+            <File Id="VS2013NgitDllFileId" Name="$(var.DLL_NGIT_FILE_NAME)" Vital="yes" DiskId="1" Source="$(var.DLL_NGIT_FILE_NAME_PATH)" />
+            <File Id="VS2013NschDllFileId" Name="$(var.DLL_NSCH_FILE_NAME)" Vital="yes" DiskId="1" Source="$(var.DLL_NSCH_FILE_NAME_PATH)" />
+            <File Id="VS2013SharpenDllFileId" Name="$(var.DLL_SHARPEN_FILE_NAME)" Vital="yes" DiskId="1" Source="$(var.DLL_SHARPEN_FILE_NAME_PATH)" />
+
+            <!-- This registry entry used as KeyPath is required to avoid the following warnings:
+                  ICE38: Component <x> installs to user profile. It must use a registry key under HKCU as its KeyPath not a file.
+                  -->
+            <RegistryValue Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\VS2013DllFile" Name="Installed" Type="integer"
+                           Value="1" KeyPath="yes"/>
+
+          </Component>
 
         </Directory>
 
@@ -264,9 +291,47 @@
                 </Component>
 
               </Directory>
+              <!-- 2012-->
 
             </Directory>
-            <!-- 2012-->
+            <Directory Id="Dir111Id" Name="12.0">
+
+              <Directory Id="Dir111AddInsId" Name="AddIns">
+
+                <Component Id="VS2013AddInFileComponentId" Guid="$(var.VS2013_ADDIN_FILE_COMPONENT_GUID)">
+
+                  <!-- Copy the .AddIn file to the folder -->
+                  <File Id="VS2013AddInFileId" Name="$(var.ADDIN_XML_FILE_NAME)" Vital="yes" DiskId="1"
+                        Source="$(var.ADDIN_XML_FILE_NAME_PATH)" />
+
+                  <!-- Modify the Version XML element inside the .AddIn file whose Id is VS2010AddInFileId
+                                to set the value "10.0" (which is the version of VS 2010) -->
+                  <util:XmlFile Id="VS2013SetVersionElement" Action="setValue" File="[#VS2013AddInFileId]"
+                                ElementPath="/Extensibility/HostApplication/Version" Value="13.0" Sequence="1" />
+
+                  <!-- Modify the Assembly XML element inside the .AddIn file whose Id is VS2010AddInFileId
+                                to set value of the file whose Id is VS2010DllFileId -->
+                  <util:XmlFile Id="VS2013SetAssemblyElement" Action="setValue" File="[#VS2013AddInFileId]"
+                                ElementPath="/Extensibility/Addin/Assembly" Value="[#VS2013DllFileId]" Sequence="1" />
+
+                  <!-- Modify the FullClassName XML element inside the .AddIn file whose Id is VS2010AddInFileId
+                                to set value of the variable CONNECT_CLASS_FULL_NAME_VS_2010 -->
+                  <util:XmlFile Id="VS2013SetFullClassNameElement" Action="setValue" File="[#VS2013AddInFileId]"
+                                ElementPath="/Extensibility/Addin/FullClassName"
+                                Value="$(var.CONNECT_CLASS_FULL_NAME_VS_2013)" Sequence="1" />
+
+                  <!-- This registry entry used as KeyPath is required to avoid the following warnings:
+                                ICE38: Component <x> installs to user profile. It must use a registry key under HKCU as its KeyPath not a file.
+                           -->
+                  <RegistryValue Root="HKCU" Key="Software\[Manufacturer]\[ProductName]\VS2013AddInFile" Name="Installed"
+                                 Type="integer" Value="1" KeyPath="yes"/>
+
+                </Component>
+
+              </Directory>
+              <!-- 2013-->
+
+            </Directory>
           </Directory>
         </Directory>
       </Directory>
@@ -352,7 +417,7 @@
 
       </Feature>
 
-      <!-- This child feature is the add-in for Visual Studio 2010 -->
+      <!-- This child feature is the add-in for Visual Studio 2012 -->
       <Feature Id="VS2012InstallationFeatureId" Title="Visual Studio 2012"
                Description="Installs the add-in for Visual Studio 2012." Level="1" AllowAdvertise="no">
 
@@ -364,6 +429,21 @@
         <!-- Its components are the add-in dll and the .AddIn XML file for Visual Studio 2010 -->
         <ComponentRef Id="VS2012DllFileComponentId" />
         <ComponentRef Id="VS2012AddInFileComponentId" />
+
+      </Feature>
+
+      <!-- This child feature is the add-in for Visual Studio 2013 -->
+      <Feature Id="VS2013InstallationFeatureId" Title="Visual Studio 2013"
+               Description="Installs the add-in for Visual Studio 2013." Level="1" AllowAdvertise="no">
+
+        <!-- The feature is hidden (Level is set to 0) when Visual Studio 2013 is not installed and
+                 it is the first installation (not in maintenance mode)
+            -->
+        <Condition Level="0">NOT Installed AND NOT VS2013INSTALLATIONFOLDER</Condition>
+
+        <!-- Its components are the add-in dll and the .AddIn XML file for Visual Studio 2013 -->
+        <ComponentRef Id="VS2013DllFileComponentId" />
+        <ComponentRef Id="VS2013AddInFileComponentId" />
 
       </Feature>
 
@@ -397,6 +477,20 @@
          ]]>
     </CustomAction>
 
+    <!-- Custom action to remove the commands of Visual Studio 2013 when uninstalling the add-in -->
+
+    <CustomAction Id="RemoveVS2013AddInCommands" Script="vbscript" Execute="deferred" Return="ignore">
+      <![CDATA[
+            Set dte = CreateObject("VisualStudio.DTE.11.0")
+            For Each cmd In dte.Commands
+               If InStr(cmd, "$(var.CONNECT_CLASS_FULL_NAME_VS_2013)") <> 0 Then
+                  cmd.Delete()
+               End If
+            Next
+            dte.Quit()
+         ]]>
+    </CustomAction>
+
     <InstallExecuteSequence>
 
       <!-- Execute the defined custom actions to remove the add-in commands from Visual Studio. They must execute when
@@ -418,6 +512,12 @@
               After="RemoveFiles">
         Installed AND UPGRADINGPRODUCTCODE AND VS2012INSTALLATIONFOLDER
         AND !VS2012InstallationFeatureId=3
+      </Custom>
+
+      <Custom Action="RemoveVS2013AddInCommands"
+              After="RemoveFiles">
+        Installed AND UPGRADINGPRODUCTCODE AND VS2013INSTALLATIONFOLDER
+        AND !VS2013InstallationFeatureId=3
       </Custom>
 
       <RemoveExistingProducts After="InstallInitialize" />
