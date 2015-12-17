@@ -21,6 +21,7 @@ namespace AsposeVisualStudioPlugin.Core
         public static string ASPOSE_OCR = "Aspose.OCR";
         public static string ASPOSE_IMAGING = "Aspose.Imaging";
         public static string ASPOSE_NOTE = "Aspose.Note";
+        public static string ASPOSE_3D = "Aspose.3D";
 
         public static string WEBSERVICE_ENDPOINT = "http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx";
 
@@ -66,7 +67,8 @@ namespace AsposeVisualStudioPlugin.Core
                 + "\n» Generate barcode images and save to stream or image file"
                 + "\n» Recognize barcodes from stream or image file"
                 + "\n» Render Windows metafiles (WMF) to images"
-                + "\n» Convert Windows metafiles (WMF) to other graphics formats";
+                + "\n» Convert Windows metafiles (WMF) to other graphics formats"
+                + "\n» Convert 3D FBX (ASCII, Binary) and STL (ASCII, Binary) file formats";
 
         public static string ASPOSE_CELLS_FEATURE_TEXT =
                 "Aspose.Cells for .NET is an Excel® " +
@@ -158,6 +160,20 @@ namespace AsposeVisualStudioPlugin.Core
                 + "\n open files and manipulate the elements of OneNote books, "
                 + "\n from text, images and properties to more complex elements, "
                 + "\n and then export to PNG, GIF, JPEG, BMP or PDF formats. ";
-              
+
+        public static string ASPOSE_3D_FEATURE_TEXT =
+                "Aspose.3D for .NET is a class library"
+                + "\n  FBX (ASCII, Binary) and STL (ASCII, Binary) file formats."
+                + "\n developers can easily create, read, convert, modify "
+                + "\n and control the substance of these 3D document formats"
+                + "\n Create a 3D Scene"
+                + "\n Creating a Mesh Surface"
+                + "\n Add mesh Geometry to the 3D Scene"
+                + "\n Set up Normal or UV on the Graphic Objects"
+                + "\n Apply Transformation to a Node"
+                + "\n Node Hierarchy in the 3D Scene Document"
+                + "\n Share Mesh's Geometry Data between Multiple Nodes"
+                + "\n Render an Animation Object"
+                + "\n Apply Materials to 3D Objects";
     }
 }

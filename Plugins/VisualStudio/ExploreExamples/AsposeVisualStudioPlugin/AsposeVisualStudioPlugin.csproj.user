@@ -12,4 +12,7 @@
     <StartArguments>/resetaddin AsposeVisualStudioPlugin.Connect</StartArguments>
     <StartAction>Program</StartAction>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
 </Project>
