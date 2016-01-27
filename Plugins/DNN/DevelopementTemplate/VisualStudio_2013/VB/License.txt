@@ -5,6 +5,10 @@
 		Copyright (c) $CopyrightYear$</br>	
 		by $YourCompany$</br>
 	</p>
+	<p>
+	  This is an extended version of Christoc's DotNetNuke Module and Theme Development Template. (http://christoctemplate.codeplex.com)</br>
+      Copyright under the license http://christoctemplate.codeplex.com/license
+	</p>
     <p>
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
         documentation files (the "Software"), to deal in the Software without restriction, including without limitation 

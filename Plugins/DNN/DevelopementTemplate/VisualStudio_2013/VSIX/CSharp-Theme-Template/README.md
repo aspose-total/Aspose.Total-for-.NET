@@ -12,3 +12,8 @@ You install this DNN Skin like any other DNN extension from the Host/Extensions 
 * Introduction Blog Post on the $safeprojectname$ Skin http://www.chrishammond.com/blog/itemid/2644/introducing-$safeprojectname$-a-new-open-source-skin-for.aspx
 * Blog discussing the Layouts available in the $safeprojectname$ Skin http://www.chrishammond.com/blog/itemid/2647/the-layouts-of-the-$safeprojectname$-open-source-skin-for.aspx
 * How to use the Carousel in $safeprojectname$ http://www.chrishammond.com/blog/itemid/2645/using-the-bootstrap-carousel-in-the-dnn-$safeprojectname$.aspx
+
+Note
+----
+This is an extended version of Christoc's DotNetNuke Module and Theme Development Template. (http://christoctemplate.codeplex.com)
+Copyright under the license http://christoctemplate.codeplex.com/license
