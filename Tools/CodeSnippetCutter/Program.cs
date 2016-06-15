@@ -11,11 +11,11 @@ namespace CodeSnippetCutter
         static void Main(string[] args)
         {
             // Location of GitHub folder, where all repositories are located
-            String baseGitHubFolder = @"C:\Users\Saqib Razzaq\Documents\GitHub\";
+            String baseGitHubFolder = @"E:\Aspose\Examples\GitHub\";
 
             // Aspose.3D for .NET
-            String examples = baseGitHubFolder + @"Aspose_3D_NET\Examples",
-                snippets = baseGitHubFolder + @"Gist_Saqib_Test";
+            String examples = baseGitHubFolder + @"Aspose_Note_for_NET\Examples",
+                snippets = baseGitHubFolder + @"Gist_Aspose_Notes_Fork";
 
             try
             {
