@@ -1,7 +1,7 @@
 ##Aspose.Total for .NET
 [Aspose.Total for .NET](http://www.aspose.com/products/total/net) is the most complete package of all file format APIs for .NET as offered by Aspose. It empowers developers to create, edit, render, print and convert between a wide range of popular document formats within any .NET, C#, ASP.NET and VB.NET applications.
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Total for .NET](http://www.aspose.com/products/total/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](Plugins) and Showcases for [Aspose.Total for .NET](http://www.aspose.com/products/total/net) to help you learn and write your own applications.
 
 <p align="center">
 
