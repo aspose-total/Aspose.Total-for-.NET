@@ -23,3 +23,4 @@ Directory | Description
 + **Documentation:** [Aspose.Total for .NET Documentation](http://www.aspose.com/docs/display/totalnet/Home)
 + **Forum:** [Aspose.Total for .NET Forum](http://www.aspose.com/community/forums/aspose.total-product-family/442/showforum.aspx)
 + **Blog:** [Aspose.Total for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-total-product-family.html)
++ **Search:** [Aspose.Total for .NET Search](https://search.aspose.com/)
